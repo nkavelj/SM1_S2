@@ -33,8 +33,8 @@ r1=gk-ziel_1;
 r2=gk-ziel_2;
 %% Restklaffungen, Plot
 figure
-quiver(r1(:,2),r1(:,1),ziel_1(:,2),ziel_1(:,1))
+quiver(ziel_1(:,2),ziel_1(:,1),r1(:,2),r1(:,1))
 axis equal
 figure
-quiver(r2(:,2),r2(:,1),ziel_2(:,2),ziel_2(:,1))
+quiver(ziel_2(:,2),ziel_2(:,1),r2(:,2),r2(:,1))
 axis equal

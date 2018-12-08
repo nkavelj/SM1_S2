@@ -31,4 +31,7 @@ rk=gk-gk_;
 figure;
 scatter(gk_trafo(:,2),gk_trafo(:,1))
 figure;
-quiver(gk_(:,2),gk_(:,1),rk(:,2),rk(:,1))
+quiver([gk_(:,2);4.481*1.0e+06],[gk_(:,1);5.486*1.0e+06],[rk(:,2);0.05],[rk(:,1);0])
+hold on
+plot1=plot(4.481*1.0e+06,5.486*1.0e+06,'x')
+legend(plot1,'Maﬂstabspfeil 5cm')

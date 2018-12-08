@@ -1,6 +1,6 @@
 %% Einlesen
-oe = [Oertlich(1:9,2),Oertlich(1:9,1)];
-gk = [GK(:,2),GK(:,1)];
+oe=[Oertlich(1:9,2),Oertlich(1:9,1)];
+gk=[GK(:,2),GK(:,1)];
 %% Parameter, P1 und P5
 dx1=oe(5,1)-oe(1,1);
 dx_1=gk(5,1)-gk(1,1);

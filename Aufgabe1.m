@@ -36,11 +36,11 @@ figure
 quiver([ziel_1(:,2);4.48*1.0e+06],[ziel_1(:,1);5.485*1.0e+06],[r1(:,2);100],[r1(:,1);0])
 axis equal
 hold on
-plot1=plot(4.48*1.0e+06,5.485*1.0e+06,'x')
+plot1=plot(4.48*1.0e+06,5.485*1.0e+06,'x');
 legend(plot1,'Maﬂstabspfeil 100m')
 figure
 quiver([ziel_2(:,2);4.48*1.0e+06],[ziel_2(:,1);5.485*1.0e+06],[r2(:,2);100],[r2(:,1);0])
 axis equal
 hold on
-plot2=plot(4.48*1.0e+06,5.485*1.0e+06,'x')
+plot2=plot(4.48*1.0e+06,5.485*1.0e+06,'x');
 legend(plot2,'Maﬂstabspfeil 100m')

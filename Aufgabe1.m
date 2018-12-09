@@ -1,4 +1,6 @@
 %% Einlesen
+%Spalten werden vertauscht, um x und y an der intuitiv richtigen Stelle zu
+%haben
 oe=[Oertlich(1:9,2),Oertlich(1:9,1)];
 gk=[GK(:,2),GK(:,1)];
 %% Parameter, P1 und P5
@@ -26,6 +28,8 @@ y0_2=gk(1,2)-o2*oe(1,1)-a2*oe(1,2)
 m2=sqrt(o2^2+a2^2)
 e2=atan2(o2,a2)
 %% Transformation
+%Herleitung für diese Transformationsformel ist in der Ausarbeitung
+%enthalten
 ziel_1=[x0_1 y0_1;x0_1 y0_1;x0_1 y0_1;x0_1 y0_1;x0_1 y0_1;x0_1 y0_1;x0_1 y0_1;x0_1 y0_1;x0_1 y0_1]+m1*oe*[cos(e1) sin(e1);-sin(e1) cos(e1)];
 ziel_2=[x0_2 y0_2;x0_2 y0_2;x0_2 y0_2;x0_2 y0_2;x0_2 y0_2;x0_2 y0_2;x0_2 y0_2;x0_2 y0_2;x0_2 y0_2]+m2*oe*[cos(e2) sin(e2);-sin(e2) cos(e2)];
 %% Restklaffungen, Berechnung

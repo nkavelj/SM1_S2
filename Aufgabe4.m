@@ -1,4 +1,6 @@
 %% Einlesen
+%Spalten werden vertauscht, um x und y an der intuitiv richtigen Stelle zu
+%haben
 p1=[Oertlich(1,2),Oertlich(1,1)];
 p5=[Oertlich(5,2),Oertlich(5,1)];
 p9=[Oertlich(9,2),Oertlich(9,1)];
@@ -22,6 +24,8 @@ my=sqrt(a2^2+b2^2)
 epsilon=atan2(b1,a1)
 gamma=atan2(b2,a2)-epsilon
 %% Transformation von P12, P16, P18, P23
+%Herleitung für diese Transformationsformel ist in der Ausarbeitung
+%enthalten
 disp('Transformierte Punkte 12,16,18,23 als (x,y):');
 gk_trafo=[a0 b0;a0 b0;a0 b0;a0 b0]+oe_trafo*[a1 b1;a2 b2]
 %% Transformation und Restklaffungen für P1-P9
